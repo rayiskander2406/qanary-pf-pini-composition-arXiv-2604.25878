@@ -27,23 +27,24 @@ This is the artifact repository for:
 
 This artifact is the capstone of a five-part formal-verification arc:
 
-- **Paper 1** — Structural Dependency Analysis (QANARY tool paper,
-  2026). Introduces Theorem 3.9.1 and flags 165 INSECURE_CONSERVATIVE
-  Barrett wires in Adams Bridge.
-- **Paper 2** — "Partial NTT Masking in Post-Quantum Cryptography
-  Hardware: A Security Margin Analysis." arXiv:2604.03813, 2026.
-- **Paper 3** — "Machine-Checked Proofs for Masking Verification in
-  Post-Quantum Hardware: From Finite Instances to Universal
-  Theorems." 2026. Sibling artifact:
-  [qanary-universal](https://github.com/rayiskander2406/universal-masking-proofs-arXiv-XXXX.XXXXX).
-- **Paper 4** — "Pipeline Security for Masked NTT Hardware:
-  Machine-Checked Proofs of Stage-Wise Uniformity over Z_q." 2026.
-  Sibling artifact:
-  [masked-ntt-pipeline-security](https://github.com/rayiskander2406/masked-ntt-pipeline-security-arXiv-XXXX.XXXXX).
-- **Paper 5** — "The 1-Bit Barrier: A Machine-Checked Trichotomy for
-  Barrett Reduction in Masked PQC Hardware." 2026. Sibling
-  artifact:
-  [one-bit-barrier](https://github.com/rayiskander2406/one-bit-barrier-arXiv-XXXX.XXXXX).
+- **Paper 1** — "Structural Dependency Analysis for Masked NTT
+  Hardware: Scalable Pre-Silicon Verification of Post-Quantum
+  Cryptographic Accelerators." arXiv:2604.15249, 2026.
+- **Paper 2** — "Partial Number Theoretic Transform Masking in
+  Post-Quantum Cryptography (PQC) Hardware: A Security Margin
+  Analysis." arXiv:2604.03813, 2026.
+- **Paper 3** — "From Finite Enumeration to Universal Proof:
+  Ring-Theoretic Foundations for PQC Hardware Masking Verification."
+  arXiv:2604.18717, 2026. Sibling artifact:
+  [qanary-universal-masking-proofs](https://github.com/rayiskander2406/qanary-universal-masking-proofs-arXiv-2604.18717).
+- **Paper 4** — "Fresh Masking Makes NTT Pipelines Composable."
+  arXiv:2604.20793, 2026. Sibling artifact:
+  [qanary-masked-ntt-pipeline-security](https://github.com/rayiskander2406/qanary-masked-ntt-pipeline-security-arXiv-2604.20793).
+- **Paper 5** — "Machine-Checked Cardinality Bounds for Masked
+  Barrett Reduction: A 1-Bit Side-Channel Leakage Barrier in
+  Post-Quantum Cryptographic Hardware." Preprint 2026 (arXiv ID
+  pending). Sibling artifact:
+  [qanary-one-bit-barrier](https://github.com/rayiskander2406/qanary-one-bit-barrier-arXiv-XXXX.XXXXX).
 
 Paper 6 (this artifact) lifts the per-gadget PF-PINI bounds of
 Papers 4–5 to a **compositional security theory**.
