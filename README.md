@@ -10,10 +10,12 @@
 Machine-checked universal proofs that **fresh inter-stage masking
 composes** arithmetic-masked gadgets over prime fields. Given two
 gadgets with Prime-Field PINI parameters `k₁` and `k₂`, fresh masking
-yields a pipeline with PF-PINI parameter `max(k₁, k₂)` — the Renewal
-Theorem shows the fresh mask completely erases Stage 1's multiplicity
-from the composed output. Without fresh masking, intermediate wires
-are exposed with multiplicity up to `k₁`, enabling DPA.
+yields a composed pipeline whose output satisfies **PF-PINI(`k₂`)** —
+the Renewal Theorem shows the fresh mask completely erases Stage 1's
+multiplicity, so the composed bound depends on `k₂` alone (the
+symmetric `max(k₁, k₂)` corollary follows trivially). Without fresh
+masking, intermediate wires are exposed with multiplicity up to `k₁`,
+enabling DPA.
 
 This is the artifact repository for:
 
@@ -59,9 +61,11 @@ uniform** regardless of `G₁`'s internal multiplicity.
 
 **2. Positive Composition Theorem (`pfpini_composition_with_fresh_mask`).**
 With fresh inter-stage masking, the composed gadget's output
-multiplicity over `(ZMod q)³` is bounded by `G₂.maxMult × q²`, yielding
-a normalized PF-PINI parameter of `max(k₁, k₂)` via
-`pfpini_composition_max_bound`.
+multiplicity over `(ZMod q)³` is bounded by `G₂.maxMult × q²` —
+i.e., the composed pipeline satisfies PF-PINI(`k₂`) **alone**, with
+`k₁` completely erased from the bound. The symmetric `max(k₁, k₂) × q²`
+corollary (`pfpini_composition_max_bound`) is a strictly weaker form
+useful when only the maximum is known.
 
 **3. Negative Result (`composed_no_fresh_output_bound` +
 `security_gap_intermediate`).**
