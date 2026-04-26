@@ -1,0 +1,39 @@
+{
+  "title": "Artifact: Prime-Field PINI — Machine-Checked Composition Theorems for Post-Quantum NTT Masking",
+  "description": "Machine-checked Lean 4 + Mathlib proof suite establishing that fresh inter-stage masking composes arithmetic masked gadgets over prime fields. The Renewal Lemma (fresh_mask_renewal) shows that for any PF-PINI gadget G1 and any target intermediate value w, exactly q pairs (m1, m_fresh) produce w — the intermediate wire is perfectly uniform regardless of G1's structure. The Positive Composition Theorem (pfpini_composition_with_fresh_mask) bounds the composed gadget's output multiplicity by G2.maxMult * q^2, giving a normalized PF-PINI parameter of max(k1, k2). The negative side is also formalized (composed_no_fresh_output_bound and security_gap_intermediate): without fresh masking, intermediate pipeline wires are exposed with multiplicity up to k1, enabling DPA. An algebraic-to-Nat-arithmetic bridge (barrett_nat_equivalence, barrettNat_pfpini_two) closes Paper 5's Nat-equivalence limitation. An Adams Bridge instantiation formally diagnoses the vulnerability found empirically by three prior analyses. All 18 theorems kernel-verified with zero sorry, zero admit, zero axiom, zero native_decide. Depends on the Paper 3, Paper 4, and Paper 5 artifacts via Lake local-path dependencies. Companion to arXiv:XXXX.XXXXX.",
+  "creators": [
+    {
+      "name": "Iskander, Ray",
+      "orcid": "0009-0008-7971-4992"
+    },
+    {
+      "name": "Kirah, Khaled",
+      "orcid": "0000-0001-5090-2529"
+    }
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "keywords": [
+    "post-quantum cryptography",
+    "masking",
+    "formal verification",
+    "Lean 4",
+    "Mathlib",
+    "PF-PINI",
+    "composition theorem",
+    "NTT",
+    "ML-KEM",
+    "ML-DSA",
+    "Barrett reduction",
+    "fresh masking",
+    "pipeline security"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "XXXX.XXXXX",
+      "relation": "isSupplementTo",
+      "scheme": "arxiv"
+    }
+  ]
+}

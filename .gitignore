@@ -1,0 +1,26 @@
+# Lean build artifacts (root level only)
+/.lake/
+/lake-packages/
+/build/
+/.cache/
+*.olean
+*.ilean
+*.trace
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Regeneratable / transient build artifacts
+paper/build/reference.docx
+paper/build/Paper6-v1.0.md
+paper/build/Paper6-v1.0_camera_ready.md
+paper/build/Paper6-v1.0_camera_ready.docx
+paper/build/media/
+*.verification.log
+
+# NOTE: paper/ IS tracked. Standing rule: all paper artifacts in-repo with commits.
+# See ~/.claude/projects/-Users-rayiskander-qanary/memory/no-desktop-storage-version-control.md
