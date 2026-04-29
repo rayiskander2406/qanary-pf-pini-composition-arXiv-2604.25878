@@ -21,7 +21,7 @@ This is the artifact repository for:
 
 > R. Iskander, K. Kirah. "Prime-Field PINI: Machine-Checked
 > Composition Theorems for Post-Quantum NTT Masking."
-> arXiv:XXXX.XXXXX, 2026. *(arXiv ID pending.)*
+> arXiv:2604.25878, 2026.
 
 ## Context: Prior Papers in the Series
 
@@ -42,9 +42,9 @@ This artifact is the capstone of a five-part formal-verification arc:
   [qanary-masked-ntt-pipeline-security](https://github.com/rayiskander2406/qanary-masked-ntt-pipeline-security-arXiv-2604.20793).
 - **Paper 5** — "Machine-Checked Cardinality Bounds for Masked
   Barrett Reduction: A 1-Bit Side-Channel Leakage Barrier in
-  Post-Quantum Cryptographic Hardware." Preprint 2026 (arXiv ID
-  pending). Sibling artifact:
-  [qanary-one-bit-barrier](https://github.com/rayiskander2406/qanary-one-bit-barrier-arXiv-XXXX.XXXXX).
+  Post-Quantum Cryptographic Hardware." arXiv:2604.24670, 2026.
+  Sibling artifact:
+  [qanary-one-bit-barrier](https://github.com/rayiskander2406/qanary-one-bit-barrier-arXiv-2604.24670).
 
 Paper 6 (this artifact) lifts the per-gadget PF-PINI bounds of
 Papers 4–5 to a **compositional security theory**.
@@ -129,8 +129,8 @@ mkdir qanary-artifacts && cd qanary-artifacts
 
 git clone https://github.com/rayiskander2406/qanary-universal-masking-proofs-arXiv-2604.18717 qanary-universal
 git clone https://github.com/rayiskander2406/qanary-masked-ntt-pipeline-security-arXiv-2604.20793 qanary-paper4
-git clone https://github.com/rayiskander2406/qanary-one-bit-barrier-arXiv-XXXX.XXXXX qanary-paper5
-git clone https://github.com/rayiskander2406/qanary-pf-pini-composition-arXiv-XXXX.XXXXX qanary-paper6
+git clone https://github.com/rayiskander2406/qanary-one-bit-barrier-arXiv-2604.24670 qanary-paper5
+git clone https://github.com/rayiskander2406/qanary-pf-pini-composition-arXiv-2604.25878 qanary-paper6
 
 cd qanary-paper6
 lake build
@@ -276,7 +276,7 @@ If you use this artifact, please cite the paper:
              for Post-Quantum NTT Masking},
   journal = {arXiv preprint},
   year    = {2026},
-  note    = {arXiv:XXXX.XXXXX (ID pending)},
+  note    = {arXiv:2604.25878},
 }
 ```
 
